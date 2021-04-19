@@ -17,7 +17,7 @@ RUN rsync -avP /wordpress/ /var/www/html/
 RUN cd /var/www/html && chown -R :www-data *
 RUN mkdir /var/www/html/wp-content/uploads && chown -R :www-data /var/www/html/wp-content/uploads
 
-COPY 4db8360919dc1b398a92c7c45911b7ac.txt /var/www/html/wordpress
+COPY 4db8360919dc1b398a92c7c45911b7ac.txt /var/www/html
 
 EXPOSE 80
 
